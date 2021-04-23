@@ -1,0 +1,19 @@
+class Person:
+    def __init__(self,initialage):
+        self.initialAge = initialage
+        if self.initialAge <0:
+            self.initialage=0
+            print("Age is not valid, setting age to 0.")
+        else:
+            self.initialage=self.initialAge
+    def yearPasses(self):
+        self.initialage =self.initialage + 1
+    def amIOld(self):
+        if self.initialage<13:
+            print("You are young.")
+        elif self.initialage >=12  and self.initialage <18:
+            print("You are a teenager.")
+        else:
+            print("You are old.")
+
+## contributed Ravi Kumar
