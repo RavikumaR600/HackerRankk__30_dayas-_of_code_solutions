@@ -1,0 +1,21 @@
+# Enter your code here. Read input from STDIN. Print output to STDOUT
+n= int (input())
+
+phonebook={}
+for i in range(n):
+    list_1=list(map(str,input().split()))
+    key=list_1[0]
+    value=list_1[1]
+    phonebook[key]= value
+
+while True:
+    try:
+        name=input()
+        if name in phonebook :
+            print(name + "=" + phonebook[name])
+        else:
+            print("Not found")
+    except:
+        break
+
+## contributed by Ravi Kumar
