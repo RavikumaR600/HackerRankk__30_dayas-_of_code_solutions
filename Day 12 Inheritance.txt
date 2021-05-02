@@ -1,0 +1,32 @@
+
+
+class Student(Person):
+    def __init__(self, firstName, lastName, idNumber, scores):     #   Class Constructor
+        self.firstName = firstName 
+        self.lastName = lastName
+        self.idNumber = idNumber
+        self.scores  = scores
+
+    def calculate(self):
+        a=sum(self.scores)/len(self.scores)
+        
+        # summ = 0
+        # for i in range (len(self.scores)):
+            # summ += self.scores[i]
+            
+        # avg_score= summ//self.idNumber
+        
+        if a >=90 :
+            return "O"
+        elif a >=80 and a<90:
+            return "E"
+        elif a >=70 and a<80:
+            return "A"
+        elif a>=55 and a<70:
+            return "P"
+        elif a >=40 and a<55:
+            return "D"
+        else:
+            return "T" 
+
+## contributed Ravi Kumar
