@@ -1,0 +1,12 @@
+S = input()
+try:
+    print(int(S))
+except Exception as e:
+    print("Bad String")
+S = input()
+try:
+    print(int(S))
+except Exception as e:
+    print("Bad String")
+
+## contributed by Ravi Kumar
