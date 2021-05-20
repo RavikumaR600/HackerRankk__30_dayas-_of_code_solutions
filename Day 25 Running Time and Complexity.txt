@@ -1,0 +1,17 @@
+def isprime(number):
+    if number <2:
+        return False
+    for i in range (2,int(number**0.5)+1):
+        if number%i==0:
+            return False
+    return True
+
+n= int(input())
+for i in range(n):
+    checknumber= int(input())
+    if isprime(checknumber):
+        print("Prime")
+    else:
+        print("Not prime")
+
+## contributed by Ravi Kumar
