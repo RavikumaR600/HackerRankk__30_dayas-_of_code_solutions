@@ -1,0 +1,29 @@
+first  = list(map(int,input().split()))
+second = list(map(int,input().split()))
+
+day1= first[0]
+day2=second[0]
+
+month1=first[1]
+month2= second[1]
+
+year1 = first[2]
+year2 = second[2]
+
+fine = 0
+
+if year1 == year2:
+    if month1==month2:
+        if day1 >day2:
+            fine=(day1-day2)*15
+    else:
+        if month1 > month2:
+            fine = (month1-month2)*500
+
+else:
+    if year1>year2:
+        fine =10000
+
+print(fine)
+
+## contributed by Ravi Kumar
